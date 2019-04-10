@@ -12,6 +12,6 @@ Install dependencies inside the folder: $ npm install
 
 Run npm: $ npm start
 
-The site is running in your localhost:3000
+The site is running in your localhost: 3000
 
 # This project is configured to run on port: 8889
