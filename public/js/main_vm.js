@@ -6,7 +6,6 @@ function setUserId({sID, message}) {
     //debugger;
     console.log('connected', sID, message);
     vm.socketID = sID;
-
 }
 
 function appendMessage(message) {
@@ -25,7 +24,6 @@ const vm = new Vue({
         dispatchMessage() {
             // send a chat message
             socket.emit('chat message', { content: this.message, name: this.nickname || "Anonymous"} );
-
             this.message = "";
         }
     },
@@ -34,6 +32,8 @@ const vm = new Vue({
         newmessage: ChatMessage
     }
 }).$mount("#app");
+
+
 
 socket.addEventListener('connected', setUserId);
 socket.addEventListener('chat message', appendMessage);
