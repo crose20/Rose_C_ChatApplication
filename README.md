@@ -6,12 +6,12 @@ Socket IO Chat with Node! Why text, call or use social media to communicate with
 
 Install npm if not already done so
 
-Command line: $ git clone https://github.com/crose20/Rose_C_ChatApplication.git
+1. Command line: $ git clone https://github.com/crose20/Rose_C_ChatApplication.git
 
-Install dependencies inside the folder: $ npm install
+2. Install dependencies inside the folder: $ npm install
 
-Run npm: $ npm start
+3. Run npm: $ npm start
 
-The site is running in your localhost: 3000
+4. The site is running in your localhost: 3000
 
-# This project is configured to run on port: 8889
+This project is configured to run on port: 8889
