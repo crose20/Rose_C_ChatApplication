@@ -1,6 +1,6 @@
 # Rose_C_ChatApplication
 
-Socket IO Chat with Node! Why text, call or use social media to communicate with your family, friends and/or enemies when you could send messages with your bff's using this super cool application?!
+Socket IO Chat with Node! Why text, call or use social media to communicate with your family, friends and/or enemies when you could send messages using this super cool application?!
 
 # Installation
 
