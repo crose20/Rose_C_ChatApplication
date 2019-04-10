@@ -1,3 +1,6 @@
+// Before working through SASS, don't forget to add this line to terminal:
+// sass --watch sass/main.scss:public/css/main.css --style compressed
+
 /* reset */
 * {
 	margin: 0; padding: 0; box-sizing: border-box;
@@ -5,7 +8,20 @@
 
 html, body { height: 100%; }
 
-body { font: 16px Helvetica, Arial; }
+body { font: 16px Futura-PT, Futura, sans-serif; }
+
+h1 {
+	font: 26px Futura-PT, Futura, sans-serif;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+h2 {
+	font: 18px Futura-PT, Futura, sans-serif;
+	color: #000;
+	margin-bottom: 30px;
+}
+
 
 main { 
 	display: flex;
@@ -13,10 +29,11 @@ main {
 	flex-direction: row;
 }
 .form-container, .messages { padding: 20px; }
+
 .form-container { 
 	flex: 1; 
-	border: 6px solid #bfcfd6;
-	background-color: #e3edf1;
+	border: 6px solid #c9c9c9;
+	background-color: #c9c9c9;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
@@ -24,23 +41,26 @@ main {
 .messages { 
 	flex: 2;
 	background-color: #eee;
-	border: 6px solid #e2e0e0; 
+	border: 6px solid #eee; 
 }
+
 
 input, textarea { 
 	display: block; 
 	width: 100%;
-	border: 2px solid #bfcfd6;
+	border: 1px solid #000000;
 	//border-color: #bfcfd6; 
-	border-radius: 4px; 
+	//border-radius: 4px; 
 	font-size: 0.8rem; 
 	padding: 0.4rem; 
 	border-style: solid;
+	font: 14px Futura-PT, Futura, sans-serif;
 }
 
-textarea { height: 135px; }
-
-
+textarea { 
+	height: 135px; 
+	font: 14px Futura-PT, Futura, sans-serif;
+}
 
 form {
 	//background: #000;
@@ -48,15 +68,30 @@ form {
 	margin: 12px auto;
 
 	input[type=submit] { 
-		width: auto; 
+		width: 100%; 
 		padding: 10px; 
-		background-color: rgb(75, 200, 17);
+		background-color: rgb(0, 0, 0);
 		margin-top: 1rem; 
-		border-radius: 8px;
+		//border-radius: 8px;
 		color: white;
 		cursor: pointer;
 		text-transform: uppercase;
-		font-weight: bold;
+		//font-weight: bold;
+		font: 14px Futura-PT, Futura, sans-serif;
+	}
+
+	input[type=submit]:hover { 
+		background-color: #ffffff;
+		color: #000000;
+		cursor: pointer;
+		transition-duration: 0.7s;
+	}
+
+	input[type=submit]:not(:hover) { 
+		background-color: #000000;
+		color: #ffffff;
+		cursor: pointer;
+		transition-duration: 0.7s;
 	}
 }
 

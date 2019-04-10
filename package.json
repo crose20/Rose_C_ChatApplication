@@ -1,5 +1,5 @@
 {
-  "name": "vanrys_t_chatapp_grb",
+  "name": "rose_c_chatapplication",
   "version": "1.0.0",
   "description": "social media app",
   "main": "app.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Trevor-FanshaweC/VanRys_T_ChatApp_GrB.git"
   },
-  "author": "TVR",
+  "author": "carterrose",
   "license": "ISC",
   "homepage": "https://github.com/Trevor-FanshaweC/VanRys_T_ChatApp_GrB#readme",
   "dependencies": {

@@ -4,17 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
+	<!-- CSS for Futura-Pt Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/bln4yuu.css">
 	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
-	<main id="app">		
+	<main id="app">	
 		<section class="form-container">
+			<h1>Socket IO Chat with Node!</h1>
+			<h2>Why text, call or use social media to communicate with your family, friends and/or enemies when you could send messages with your bff's using this super cool application?!</h2>	
 			<label for="nickname">Your Nickname (optional)</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
 				<label for="message">Something to say?</label>
-				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"  placeholder="What would you like to say?"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">
 			</form>
 		</section>
