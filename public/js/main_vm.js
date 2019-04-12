@@ -6,6 +6,11 @@ function setUserId({sID, message}) {
     //debugger;
     console.log('connected', sID, message);
     vm.socketID = sID;
+
+    //Notify in chat when a new user joins
+    var newUser = new Object();
+    socket.emit('chat message', { content: "A new user has joined the chat!", name: "Notification:", object: newUser});
+
 }
 
 function appendMessage(message) {
@@ -24,6 +29,9 @@ const vm = new Vue({
         dispatchMessage() {
             // send a chat message
             socket.emit('chat message', { content: this.message, name: this.nickname || "Anonymous"} );
+            this.message = "";
+
+            //reset the chat message field
             this.message = "";
         }
     },
